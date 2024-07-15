@@ -16,7 +16,6 @@ module spi_tb();
   wire [7:0] miso_byte;
   
   wire spi_clk;
-  reg spi_miso;
   wire spi_mosi; 
 
   // Clock Generators:
@@ -42,7 +41,7 @@ module spi_tb();
 
    // SPI Interface
    .spi_clk(spi_clk),
-   .spi_miso(spi_miso),
+   .spi_miso(spi_mosi),
    .spi_mosi(spi_mosi)
    );
 
